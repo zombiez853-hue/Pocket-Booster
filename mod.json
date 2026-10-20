@@ -1,0 +1,35 @@
+{
+	"geode": "5.0.0",
+	"gd": {
+		"win": "*",
+		"android": "*",
+		"mac": "*",
+		"ios": "*"
+	},
+	"id": "zombiez853-hue.pocket booster",
+	"name": "Pocket Boost",
+	"version": "v1.0.0",
+	"developer": "YourName",
+	"description": "Lightweight optimizations that help low-end and mobile devices.",
+	"tags": ["performance", "universal"],
+	"settings": {
+		"texture-cleanup": {
+			"type": "bool",
+			"name": "Free Textures After Levels",
+			"description": "Releases unused textures a couple of seconds after you leave a level. Lowers memory use (fewer low-RAM crashes). The next level may load slightly slower.",
+			"default": true
+		},
+		"particle-percent": {
+			"type": "int",
+			"name": "Particle Density",
+			"description": "Percent of in-level particle effects to keep. 100 = vanilla. Lower values cut CPU and GPU work in busy levels.",
+			"default": 100,
+			"min": 0,
+			"max": 100,
+			"control": {
+				"slider": true,
+				"input": true
+			}
+		}
+	}
+}
